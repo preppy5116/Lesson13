@@ -54,7 +54,9 @@ public class MainForm extends JFrame {
     }
 
     private void abortData() {
-        disposable.dispose();
+        if(disposable!= null) {
+            disposable.dispose();
+        }
     }
 }
 
